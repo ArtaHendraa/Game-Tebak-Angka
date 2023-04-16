@@ -3,12 +3,7 @@ package com.game;
 import java.util.Random;
 import java.util.Scanner;
 
-import javax.annotation.processing.Generated;
-import javax.lang.model.util.ElementScanner14;
-
 import static com.game.MyColor.*;
-
-
 
 public class Game{
     public static void main(String[] args){
@@ -21,7 +16,7 @@ public class Game{
         while(play){
             // clear screan setelah program dimulai kembali
             clearScrean();
-            int angkaAcak;   // = rendom.nextInt(10) + 1;
+            int angkaAcak;
             int jumblahPercobaan = 0;
 
             System.out.println(ANSI_BLUE + "Selamat Datang Di Game Tebak Angka!" + ANSI_RESET);
@@ -83,7 +78,7 @@ public class Game{
                 // Pengecekan Angka Yang Di Tebak, Sesuai dengan inputUser
                 if(tebakan == angkaAcak){
 
-                    //  MASALAH -> SETELAH BERHASIL MENEBAK ANGKA ACAK TIDAK BERUBAH
+                    // pembaruan angkaAcak sesuai level yang di pilih
                     if(level == 1){
                         score+=10;
                         jumblahPercobaan+=3;
@@ -104,7 +99,7 @@ public class Game{
                     System.out.println(ANSI_GREEN + "Selamat Anda Berhasil Menebak Angka!" + ANSI_RESET);
                     System.out.println(ANSI_CYAN + "Score Anda Saat Ini : " + score + ANSI_RESET);
                     System.out.println("Jumblah Percobaan Anda saat ini + Bonus Kemenangan-> lvl 1 = +3 | lvl 2 = +4 | lvl 3 = +5 : " + jumblahPercobaan);
-                    System.out.print(ANSI_GREEN + "Silahkan Masukan Angka Lagi dari : " + ANSI_RESET);
+                    System.out.print(ANSI_GREEN + "Silahkan Tebak Angka Lagi : " + ANSI_RESET);
                 }else if(tebakan < angkaAcak){
                     System.out.println(ANSI_GREEN + "Tebakan Anda Terlalu Rendah. Sisa Percobaan : " + jumblahPercobaan + ANSI_RESET);
                     System.out.print("Silahkan Masukan Angka Lagi : ");
