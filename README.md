@@ -1,4 +1,4 @@
-# Game Tebak Angka
+# Game Tebak Angka 
 Game Tebak Angka adalah permainan sederhana yang bertujuan untuk menebak angka yang dipilih secara acak oleh program. Pemain dapat memilih level kesulitan yang diinginkan dan memiliki beberapa kesempatan untuk menebak angka yang benar. Setiap kali pemain berhasil menebak angka dengan benar, skor pemain akan bertambah. Namun, jika pemain tidak dapat menebak angka dengan benar, skor akan berkurang.
 
 ## Requirements
